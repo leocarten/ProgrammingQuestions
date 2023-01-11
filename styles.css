@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 .intro{
     font-size: 30px;
 }
@@ -16,4 +19,22 @@
 }
 .buttonLeo:hover{
     background-color: rgb(183, 183, 183);
+}
+.codeHeading{
+    color: orange;
+}
+.codeString{
+    color: rgb(18, 167, 18);
+}
+.codeComments{
+    color: rgb(178, 175, 175);
+}
+.codeKey{
+    color:yellow;
+}
+.codeOut{
+    color:rgb(194, 79, 194);
+}
+.codeInt{
+    color:rgb(101, 101, 215);
 }
