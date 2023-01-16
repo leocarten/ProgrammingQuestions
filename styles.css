@@ -33,8 +33,12 @@ html {
     color:yellow;
 }
 .codeOut{
-    color:rgb(194, 79, 194);
+    color:rgb(209, 95, 209);
 }
 .codeInt{
-    color:rgb(101, 101, 215);
+    color:rgb(101, 139, 215);
+}
+.example{
+    font-weight: bold;
+    text-decoration: underline;
 }
