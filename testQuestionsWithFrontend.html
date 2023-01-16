@@ -16,6 +16,40 @@
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Open Sans"}
 </style>
+
+<style>
+  @media (max-width:500px){
+    code{
+      font-size: 6px !important;
+    }
+    .codeHeading{
+    color: orange;
+    font-size: 6px;
+}
+
+.codeString{
+    color: rgb(18, 167, 18);
+    font-size: 6px;
+}
+.codeComments{
+    color: rgb(178, 175, 175);
+    font-size: 6px;
+}
+.codeKey{
+    color:yellow;
+    font-size: 6px;
+}
+.codeOut{
+    color:rgb(194, 79, 194);
+    font-size: 6px;
+}
+.codeInt{
+    color:rgb(101, 101, 215);
+    font-size: 6px;
+}
+  }
+</style>
+
 </head>
 <body class="w3-light-grey">
 
@@ -35,8 +69,8 @@ body {font-family: "Open Sans"}
 
   <!-- Header -->
   <header class="w3-container w3-center w3-padding-48 w3-white">
-    <h1 class="w3-xxlarge"><b>These are programming questions designed to help enhance skills and get yourself ready for interviews. Please use any language to solve these.</b></h1>
-    <h6><i style="font-size:24px; color: green;" class="fa">&#xf00c;</i> Made by: Leo Carten</h6>
+    <h1 class="w3-xxlarge"><b>These are programming questions designed to help enhance skills and prepare yourself for interviews. Each question will get progressively harder - please use any language to solve the question.</b></h1>
+    <h6><i style="font-size:24px; color: green;" class="fa">&#xf00c;</i> Made by: <a href="https://leocarten.github.io/About/Leo/Carten.html" target="_blank"> Leo Carten</h6></a>
   </header>
 
   <div class="w3-row w3-padding w3-border">
@@ -48,39 +82,36 @@ body {font-family: "Open Sans"}
       <div class="w3-container w3-white w3-margin w3-padding-large" id="questions">
         <div class="w3-center">
           <h3>Question 1</h3>
-          <h5>Reversing</h5>
+          <h5>Reversing Method</h5>
         </div>
 
         <div class="w3-justify">
-          <p>Question 1 - You are being given the string <span class="inQuestionImportant">4kpUo49Vbk230criaeYaWpE6LE2BTgK0oR9DfU7JpqM0OGQmPTsOx</span>. Write a program that reverses this string, and then paste it in the answer box.</p>
+          <p>You are being given the string <span class="inQuestionImportant">4kpUo49Vbk230criaeYaWpE6LE2BTgK0oR9DfU7JpqM0OGQmPTsOx</span>. Write a program that reverses this string, and then paste it in the answer box.</p>
           <p>Example - the string <span class="inQuestionImportant">dog</span> would yield the answer <span class="inQuestionImportant">god</span>.</p>
           <p class="w3-clear"></p>
-          <input type="text" id="q1" value="Question 1 answer...">
+          <input type="text" id="q1" placeholder="Question 1 answer...">
           <button class="buttonLeo" onclick="submitQuestion1()">Submit answer <i class="fa fa-paper-plane"></i> </button>
           <button class="buttonLeo" onclick="getHint1()">Get a hint <i class="fa fa-handshake-o"></i></button>
           <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
             <hr>
-              <div class="w3-col l2 m3">
-                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
-              </div>
+
 
           </div>
         </div>
       </div>
-      <hr>
 
       <!-- Question 2 -->
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>Question 2</h3>
-          <h5>String Iteration</h5>
+          <h5>String Iteration Method</h5>
         </div>
 
         <div class="w3-justify">
-          <p>Question 2 - You are being given the string <span class="inQuestionImportant">618850167582094632012348435757910453597532559</span>. Write a program that adds each individual number in this string.</p>
+          <p>You are being given the string <span class="inQuestionImportant">618850167582094632012348435757910453597532559</span>. Write a program that adds each individual number in this string.</p>
           <p>Example - the string <span class="inQuestionImportant">123</span> would yield the answer <span class="inQuestionImportant">6</span> because 1+2=3, and 3+3=6.</p>
           <p class="w3-clear"></p>
-          <input type="text" id="q2" value="Question 2 answer...">
+          <input type="text" id="q2" placeholder="Question 2 answer...">
           <button class="buttonLeo" onclick="submitQuestion2()">Submit answer <i class="fa fa-paper-plane"></i></button>
           <button class="buttonLeo" onclick="getHint2()">Get a hint <i class="fa fa-handshake-o"></i></button>
           
@@ -93,38 +124,69 @@ body {font-family: "Open Sans"}
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>Question 3</h3>
-          <h5>String iteration part 2</h5>
+          <h5>Two parameter String iteration method</h5>
         </div>
 
         <div class="w3-justify">
-          <p>Coming soon!</p>
-          <!--
-          <p>Question 3 - You are given the string <span class="inQuestionImportant">leoissupercools</span>. Find which character in this string appears most often.</p>
-          <p>Example - the string <span class="inQuestionImportant">ilovetocode</span> would yield the answer <span class="inQuestionImportant">o</span> because it appears 3 times.</p>
-          <p class="w3-clear"></p>
-          <input type="text" id="q3" value="Question 2 answer...">
+          <p>Write a program that takes two parameters, a string and a character. This parameter returns the amount of occurences the character appears in the string. The given string is <span class="inQuestionImportant">juveosyvvoxslsnnyufmjuchfpbrwiwairhlbydcbpzrivhx</span> and the character is <span class="inQuestionImportant">w</span>.</p>
+          <p>Example - the string <span class="inQuestionImportant">ilikeicecream</span> should yield the integer <span class="inQuestionImportant">3</span> for the number of occurences of the character <span class="inQuestionImportant">i</span>.</p>
+          <input type="text" id="q3" placeholder="Question 3 answer...">
           <button class="buttonLeo" onclick="submitQuestion3()">Submit answer <i class="fa fa-paper-plane"></i></button>
           <button class="buttonLeo" onclick="getHint3()">Get a hint <i class="fa fa-handshake-o"></i></button>
-          -->
-          
-          <!-- Example of comment field -->
-
         </div>
       </div>
+
+      <!-- Question 4 -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Question 4</h3>
+          <h5>Directions</h5>
+        </div>
+
+        <div class="w3-justify">
+          <p>Imagine you are given a set of directions, where the letter represents the direction, and the number represents the distance: </p>
+          <p>L4 means you traveled to the left, 4 units.</p>
+          <p>R3 means you traveled to the left, 3 units.</p>
+          <p>L9 means you traveled to the left, 9 units.</p>
+          <p>R2 means you traveled to the left, 2 units.</p>
+          <p>The thing is, when you travel to the left, it counters the distance you've traveled to the right, and vise-versa. For example, if you are given L7 followed by R4, the total distance traveled is L3.</p>
+          <p><span class="example">Example</span> - you are given the directions <span class="inQuestionImportant">L4R7L1R3L2R8</span>, the total distance should be <span class="inQuestionImportant">R11</span>.</p>
+          <p>The string you are given is: <span class="inQuestionImportant">L5L9L1R5R3L9R2L5R8L9R1L4L4L6R1R5L2R5R2L4L1R8R3L7</span>. Find the total distance traveled.</p>
+          <input type="text" id="q4" placeholder="Question 4 answer...">
+          <button class="buttonLeo" onclick="submitQuestion4()">Submit answer <i class="fa fa-paper-plane"></i></button>
+          <button class="buttonLeo" onclick="getHint4()">Get a hint <i class="fa fa-handshake-o"></i></button>
+        </div>
+      </div>
+
+
+            <!-- Question 5 -->
+            <div class="w3-container w3-white w3-margin w3-padding-large">
+              <div class="w3-center">
+                <h3>Question 5</h3>
+                <h5>--</h5>
+              </div>
+      
+              <div class="w3-justify">
+                <p>Coming soon!</p>
+                <input type="text" id="q5" placeholder="Question 5 answer...">
+                <button class="buttonLeo" onclick="submitQuestion5()">Submit answer <i class="fa fa-paper-plane"></i></button>
+                <button class="buttonLeo" onclick="getHint5()">Get a hint <i class="fa fa-handshake-o"></i></button>
+              </div>
+            </div>
       
     <!-- end of questions -->
 
-          <!-- Question 3 -->
+          <!-- Solutions -->
           <div class="w3-container w3-white w3-margin w3-padding-large" id="solutions">
             <div class="w3-center">
               <h3>See my solutions</h3>
             </div>
     
             <div class="w3-justify">
-              <p>I used Java to solve these problems - the language you choose is up to you.</p>
+              <p>I used Java to solve these problems - the language you choose is up to you. My solutions are in the order in which they appear.</p>
               
-              <pre style="background-color:rgb(48, 46, 46)">
-                <code style="color:white; font-size: 12px;">
+<pre style="background-color:rgb(48, 46, 46)">
+<code style="color:rgb(249, 247, 247); font-size: 12px;">
 <span class="codeComments">// written by: Leo Carten </span>
 <span class="codeHeading">public class</span> Main {
   <span class="codeComments">// my main class where i test my methods</span>
@@ -132,13 +194,14 @@ body {font-family: "Open Sans"}
       Questions ObjectOfClass = <span class="codeHeading">new</span> Questions()<span class="codeHeading">;</span>
       System.<span class="codeOut">out</span>.println(ObjectOfClass.Reversed(<span class="codeString">"string"</span>))<span class="codeHeading">;</span>
       System.<span class="codeOut">out</span>.println(ObjectOfClass.sumInString(<span class="codeString">"123"</span>))<span class="codeHeading">;</span>
-      <!--System.<span class="codeOut">out</span>.println(ObjectOfClass.numOfOccurences(<span class="codeString">"strings"</span>))<span class="codeHeading">;</span>-->
+      System.<span class="codeOut">out</span>.println(ObjectOfClass.numOfCharInString(<span class="codeString">"test", 't'</span>))<span class="codeHeading">;</span>
   }
 }
 
 <span class="codeComments">// these are my methods</span>
 <span class="codeHeading">import</span> java.util.*<span class="codeHeading">;</span>
 <span class="codeHeading">public class</span> Questions {
+  <span class="codeComments">// Question 1</span>
     String <span class="codeKey">Reversed</span>(String theString) {
         StringBuilder sb = <span class="codeHeading">new</span> StringBuilder()<span class="codeHeading">;</span>
         ArrayList arrayList = <span class="codeHeading">new</span> ArrayList<>()<span class="codeHeading">;</span>
@@ -151,6 +214,7 @@ body {font-family: "Open Sans"}
         <span class="codeHeading">return</span> sb.toString()<span class="codeHeading">;</span>
     }
 
+  <span class="codeComments">// Question 2</span>
     <span class="codeHeading">int</span> <span class="codeKey">sumInString</span>(String number) {
       <span class="codeHeading">int</span>  sum = <span class="codeInt">0</span><span class="codeHeading">;</span>
       <span class="codeHeading">for</span> (<span class="codeHeading">int</span> i = <span class="codeInt">0</span><span class="codeHeading">;</span> i < number.length()<span class="codeHeading">;</span> i++) {
@@ -160,8 +224,51 @@ body {font-family: "Open Sans"}
         }
         <span class="codeHeading">return</span> sum<span class="codeHeading">;</span>
     }
-                </code>
-              </pre>
+
+  <span class="codeComments">// Question 3</span>
+    <span class="codeHeading">int</span> <span class="codeKey">numOfCharInString</span>(String theString, <span class="codeHeading">char</span> theCharacter) {
+      <span class="codeHeading">int</span>  runningTally = <span class="codeInt">0</span><span class="codeHeading">;</span>
+      <span class="codeHeading">for</span> (<span class="codeHeading">int</span> i = <span class="codeInt">0</span><span class="codeHeading">;</span> i < theString.length()<span class="codeHeading">;</span> i++) {
+        <span class="codeHeading">char</span> match = theString.charAt(i)<span class="codeHeading">;</span>
+        <span class="codeHeading">if</span> (match == theCharacter){
+            runningTally++<span class="codeHeading">;</span>
+        }
+      }
+        <span class="codeHeading">return</span> runningTally<span class="codeHeading">;</span>
+    }
+
+  <span class="codeComments">// Question 4</span>
+    String <span class="codeKey">distanceTraveled</span>(String directions){
+      <span class="codeHeading">int</span> right = <span class="codeInt">0</span><span class="codeHeading">;</span>
+      <span class="codeHeading">int</span> left = <span class="codeInt">0</span><span class="codeHeading">;</span>
+      <span class="codeHeading">for</span>(<span class="codeHeading">int</span> i = <span class="codeInt">0</span><span class="codeHeading">;</span> i < directions.length()<span class="codeHeading">;</span> i++){
+        <span class="codeHeading">if</span>(i % <span class="codeInt">2</span> == <span class="codeInt">0</span>){
+          <span class="codeHeading">if</span>(directions.charAt(i) == <span class="codeString">'L'</span>){
+            <span class="codeHeading">char</span> leftChar = directions.charAt(i+<span class="codeInt">1</span>)<span class="codeHeading">;</span>
+            <span class="codeHeading">int</span> leftNum = Character.getNumericValue(leftChar)<span class="codeHeading">;</span>
+                  left += leftNum<span class="codeHeading">;</span>
+              }
+              <span class="codeHeading">else</span>{
+                <span class="codeHeading">char</span> rightChar = directions.charAt(i+<span class="codeInt">1</span>)<span class="codeHeading">;</span>
+                <span class="codeHeading">int</span> rightNum = Character.getNumericValue(rightChar)<span class="codeHeading">;</span>
+                  right += rightNum<span class="codeHeading">;</span>
+              }
+          }
+      }
+      <span class="codeHeading">if</span>(left < right){
+        <span class="codeHeading">return</span> <span class="codeString">"R"</span>+(right-left)<span class="codeHeading">;</span>
+      }
+      <span class="codeHeading">else if</span>(left == right) {
+        <span class="codeHeading">return </span><span class="codeString">"There was 0 distance traveled."</span><span class="codeHeading">;</span>
+      }
+      <span class="codeHeading">else</span>{
+        <span class="codeHeading">return</span> <span class="codeString">"L"</span>+(left-right)<span class="codeHeading">;</span>
+      }
+  }
+
+  }
+</code>
+</pre>
 
     
             </div>
@@ -171,24 +278,25 @@ body {font-family: "Open Sans"}
     <!-- About/Information menu -->
 
     <div class="w3-col l4">
-      <div style="background-image: linear-gradient(black, black);">
+      <div style="background-image: linear-gradient(white, rgb(197, 197, 197));">
       <div class="w3-white w3-margin">
-        <div class="w3-container w3-green">
-          <h4 style="color: black">About me</h4>
-          <p style="color: black">I am currently a Junior at Plymouth State University studying Computer Science. My interests in Computer Science are data-visualization, block-chain development, and user-experience! You can read more about me <a href="">here</a>.</p>
+        <div class="w3-container w3-white">
+          <h4 style="color: black"><i class="fa fa-user"></i></i> About me</h4>
+          <p style="color: black">I am currently a Junior at Plymouth State University studying Computer Science. My interests in Computer Science are data-visualization, block-chain development, and user-experience! You can read more about me <a style="color: rgb(15, 131, 15);" href="https://leocarten.github.io/About/Leo/Carten.html" target="_blank">here</a>.</p>
         </div>
       </div>
     </div>
       <hr>
 
-      <div style="background-image: linear-gradient(black, black);">
+      <div style="background-image: linear-gradient(white, rgb(197, 197, 197));">
       <div class="w3-white w3-margin" id="connect">
-        <div class="w3-container w3-padding w3-green">
-          <h4 style="color: black">Connect with me!</h4>
+        <div class="w3-container w3-padding w3-white">
+          <h4 style="color: black"><i class="fa fa-user-plus"></i> Connect with me!</h4>
         </div>
         <div class="w3-container w3-xlarge w3-padding">
-          <a href="https://twitter.com/TheChosen0ne69"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-          <a href="linkedin.com/in/leo-carten-925535195"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          <a href="https://twitter.com/TheChosen0ne69" target="_blank"><i style="font-size: 40px;" class="fa fa-twitter w3-hover-opacity"></i></a>
+          <a href="https://linkedin.com/in/leo-carten-925535195" target="_blank"><i style="font-size: 40px;" class="fa fa-linkedin w3-hover-opacity"></i></a>
+          <a href="https://github.com/leocarten" target="_blank"><i style="font-size: 40px;"class="fa fa-github w3-hover-opacity"></i></a>
         </div>
       </div>
     </div>
